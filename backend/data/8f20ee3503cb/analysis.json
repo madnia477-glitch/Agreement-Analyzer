@@ -1,0 +1,57 @@
+{
+  "document_overview": {
+    "agreement_type": null,
+    "parties": [],
+    "institution": null,
+    "product": null,
+    "version": null,
+    "effective_date": null,
+    "page_count": 2,
+    "detected_confidence": "medium"
+  },
+  "executive_summary": null,
+  "financial_terms": [],
+  "obligations": [],
+  "bank_rights": [],
+  "default_clauses": [],
+  "termination_clauses": [],
+  "early_settlement": {
+    "present": false,
+    "conditions": null,
+    "charges": null,
+    "rebate": null,
+    "notice_requirement": null,
+    "source": null
+  },
+  "attention_areas": [],
+  "important_terms": [],
+  "potential_benefits": [],
+  "potential_concerns": [],
+  "signatures": [],
+  "checkboxes": [],
+  "consents": [],
+  "actions": [],
+  "missing_fields": [],
+  "questions_to_consider": [],
+  "before_you_sign_checklist": [
+    "Verify your personal information (name, address, account/CNIC number)"
+  ],
+  "attention_score": {
+    "level": "LOW",
+    "factors": [
+      "No significant attention factors were detected from the available evidence."
+    ],
+    "disclaimer": "This score is a document-review indicator, not a legal or financial judgment.",
+    "methodology_note": "Calculated from a fixed checklist of document characteristics (fees, early settlement, default clauses, authorizations, termination restrictions, high-severity attention areas). Each present characteristic adds one point; 0-1 = LOW, 2-3 = MODERATE, 4+ = HIGH."
+  },
+  "citations": [],
+  "processing_notes": [
+    "The 'overview' section could not be fully analyzed (Connection error.).",
+    "The 'financial' section could not be fully analyzed (Connection error.).",
+    "The 'obligations rights' section could not be fully analyzed (Connection error.).",
+    "The 'default termination' section could not be fully analyzed (Connection error.).",
+    "The 'attention' section could not be fully analyzed (Connection error.).",
+    "The 'important terms' section could not be fully analyzed (Connection error.)."
+  ],
+  "voice_summary": null
+}

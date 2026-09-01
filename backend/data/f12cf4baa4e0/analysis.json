@@ -1,0 +1,1289 @@
+{
+  "document_overview": {
+    "agreement_type": "Loan Agreement",
+    "parties": [
+      "Borrower",
+      "Lender"
+    ],
+    "institution": null,
+    "product": null,
+    "version": null,
+    "effective_date": null,
+    "page_count": 4,
+    "detected_confidence": "medium"
+  },
+  "executive_summary": "This Loan Agreement sets out the terms under which the Borrower will receive a specified Borrowed Money amount from the Lender and repay it according to a chosen payment schedule (weekly, monthly, or lump sum). It outlines the interest rate (if any), the due date for full repayment, and the possibility of late fees or pre\u2011payment penalties as indicated on the payment schedule. The agreement includes lender rights such as acceleration of the debt upon late payment, default, or transfer of pledged security, and provides that the Borrower waives many notices and consents. It also details remedies, including attorney\u2019s fees on default, and states that the agreement is governed by the law of a specified state and binds the Borrower\u2019s successors, while the Lender may not assign its rights without consent.",
+  "financial_terms": [
+    {
+      "label": "Principal",
+      "amount_or_rule": null,
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Interest Rate",
+      "amount_or_rule": null,
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Late Payment Fee",
+      "amount_or_rule": null,
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Prepayment Penalty",
+      "amount_or_rule": null,
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Attorney Fees",
+      "amount_or_rule": "reasonable attorney\u2019s fees not exceeding a sum equal to the maximum usury rate in the state of Governing Law of the then outstanding balance owing on the Borrowed Amount, plus all other reasonable expenses incurred by Lender",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    }
+  ],
+  "obligations": [
+    {
+      "obligation": "Repay loan according to schedule",
+      "meaning": "Borrower must make the agreed payment amount on the specified weekly, monthly, or lump\u2011sum dates until the Due Date.",
+      "trigger": "Execution of the loan agreement",
+      "frequency": "As set out in the payment schedule (weekly, monthly, or one lump sum)",
+      "consequence": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Pay interest",
+      "meaning": "If the loan is designated to bear interest, Borrower must pay interest at the stated rate, compounded as indicated.",
+      "trigger": "Ongoing while interest applies",
+      "frequency": "According to the chosen compounding period (annually, monthly, or other)",
+      "consequence": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Late payment fee",
+      "meaning": "Borrower may be required to pay a late fee if a payment is more than the specified number of days late and the late\u2011fee option is selected.",
+      "trigger": "Payment is late by more than the blank\u2011filled number of days",
+      "frequency": "Each time a payment is late beyond that threshold",
+      "consequence": "Late fee equal to the amount specified in the agreement (amount not shown in evidence)",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Prepayment penalty",
+      "meaning": "Borrower may owe a penalty if a payment is made before the Due Date and the prepayment\u2011penalty option is selected.",
+      "trigger": "Borrower makes a payment prior to the Due Date",
+      "frequency": "Each time a prepayment occurs",
+      "consequence": "Penalty amount as specified in the agreement (amount not shown in evidence)",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Pledge security",
+      "meaning": "Borrower agrees to provide the listed collateral to secure the loan.",
+      "trigger": "Signing the agreement (when the security option is checked)",
+      "frequency": null,
+      "consequence": "Lender may obtain possession of the collateral if the Borrower defaults",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Waiver of protest and notices",
+      "meaning": "Borrower waives protest, presentment, notice of dishonor, notice of acceleration, and any notice of changes, and remains bound to pay principal, interest, and other sums despite such changes.",
+      "trigger": "Any change, release, surrender, exchange, modification, substitution of security, or extension of time",
+      "frequency": null,
+      "consequence": "Continued obligation to pay all amounts due under the agreement",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Attorney's fees on default",
+      "meaning": "If a payment is not made when due, Borrower must pay reasonable attorney\u2019s fees and other reasonable expenses incurred by the Lender.",
+      "trigger": "Any payment is not paid when due",
+      "frequency": null,
+      "consequence": "Payment of attorney\u2019s fees and expenses as described in the clause",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Binding on successors",
+      "meaning": "The Borrower\u2019s promise binds the Borrower\u2019s successors, heirs, and assigns.",
+      "trigger": null,
+      "frequency": null,
+      "consequence": null,
+      "source": {
+        "page": 4,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "bank_rights": [
+    {
+      "right": "Charge late fee",
+      "conditions": "Borrower is late by more than the specified number of days and the late\u2011fee option is selected",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Impose prepayment penalty",
+      "conditions": "Borrower makes a payment prior to the Due Date and the prepayment\u2011penalty option is selected",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Possess pledged collateral",
+      "conditions": "Borrower defaults under the agreement",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Cumulative remedies",
+      "conditions": "No specific condition; Lender may pursue any right singly, successively, or together at its sole discretion",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Acceleration of loan",
+      "conditions": "Any of the following occurs: (a) payment is late more than 15 days, (b) Borrower defaults on any condition, or (c) pledged assets are transferred or sold",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Collect attorney's fees and expenses",
+      "conditions": "Borrower fails to make a payment when due (default)",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "No waiver of rights due to delay or omission",
+      "conditions": "Any delay or omission by the holder in exercising rights does not waive those rights",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "default_clauses": [
+    {
+      "trigger": "Late payment of more than 15 days",
+      "stated_consequence": "Lender may declare the Borrowed Money immediately due and payable, including interest owed",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "trigger": "Borrower defaults on any of the conditions of this Agreement",
+      "stated_consequence": "Lender may declare the Borrowed Money immediately due and payable, including interest owed",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "trigger": "Transfer or sale of assets or property pledged as Security",
+      "stated_consequence": "Lender may declare the Borrowed Money immediately due and payable, including interest owed",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "termination_clauses": [
+    {
+      "who_can_terminate": "Both Borrower and Lender (agreement ends upon repayment)",
+      "when": "When the Borrowed Amount is repaid in full",
+      "how": "Full repayment of principal and any accrued interest according to the payment schedule",
+      "notice_required": null,
+      "fee": null,
+      "consequences": "Agreement terminates; no further obligations remain",
+      "source": {
+        "page": 4,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "early_settlement": {
+    "present": true,
+    "conditions": "If the Borrower makes a payment prior to the Due Date",
+    "charges": "May include a prepayment penalty if selected; the specific penalty amount is not specified in the provided text",
+    "rebate": null,
+    "notice_requirement": null,
+    "source": {
+      "page": 2,
+      "section": null,
+      "quote": null
+    }
+  },
+  "attention_areas": [
+    {
+      "level": "Important",
+      "topic": "Late payment fee",
+      "what_document_says": "If a payment is late, the Borrower may be charged a late fee (page 2).",
+      "why_it_matters": "A fee could increase the cost of borrowing if a payment is missed.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Prepayment penalty",
+      "what_document_says": "The Agreement may impose a prepayment penalty if the Borrower pays before the Due Date (page 2).",
+      "why_it_matters": "Early repayment could trigger an additional charge, affecting settlement costs.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Security / collateral claim",
+      "what_document_says": "Borrower can be required to pledge collateral, and the Lender may obtain possession of that collateral upon default (page 2).",
+      "why_it_matters": "Pledging assets gives the Lender broad rights over the Borrower\u2019s property if the loan is not repaid.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Acceleration clause",
+      "what_document_says": "Lender may declare the entire loan immediately due if a payment is over 15 days late, if the Borrower defaults, or if pledged security is transferred (page 3).",
+      "why_it_matters": "This can require full repayment on short notice, creating a strict default condition.",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Waiver of notices and consent",
+      "what_document_says": "Borrower waives protest, notice of dishonor, notice of acceleration, and any notice of changes, allowing the Lender to modify terms without notice or consent (page 3).",
+      "why_it_matters": "Borrower may be bound by changes they are not informed about.",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Attention",
+      "topic": "Attorney\u2019s fees on default",
+      "what_document_says": "If a payment is not made when due, Borrower must also pay reasonable attorney\u2019s fees up to the maximum usury rate plus other expenses (page 3).",
+      "why_it_matters": "Default could lead to additional legal cost obligations.",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Informational",
+      "topic": "Interest rate option",
+      "what_document_says": "Borrowed Money may bear interest at a specified rate, or may bear no interest at all (page 1).",
+      "why_it_matters": "The presence or absence of interest directly affects the total amount owed.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Informational",
+      "topic": "Subordination to other debt",
+      "what_document_says": "Borrower\u2019s obligations are subordinated to any existing indebtedness to unrelated third\u2011party lenders (page 3).",
+      "why_it_matters": "Other creditors may have priority over this loan in case of default.",
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "important_terms": [],
+  "potential_benefits": [
+    {
+      "title": "Clear payment schedule options",
+      "explanation": "The Agreement lists specific payment frequencies (weekly, monthly, lump sum) and how payments are applied first to interest then principal.",
+      "page": 1,
+      "section": "V. PAYMENTS",
+      "source_text": "Borrower selects weekly, monthly, or lump\u2011sum schedule; payments first go to accrued interest then principal."
+    },
+    {
+      "title": "Option for interest\u2011free loan",
+      "explanation": "Borrower can choose a loan that does not bear interest, limiting repayment to the principal amount only.",
+      "page": 1,
+      "section": "III. INTEREST RATE",
+      "source_text": "Checkbox for 'NOT Bear Interest' indicating no interest is charged."
+    },
+    {
+      "title": "Option for no late fee",
+      "explanation": "The Agreement allows the parties to agree that no late fee will be charged if a payment is late.",
+      "page": 2,
+      "section": "VI. LATE PAYMENT",
+      "source_text": "Checkbox for 'Not Charged a Late Fee' indicating no fee applies to late payments."
+    },
+    {
+      "title": "Option for no prepayment penalty",
+      "explanation": "Borrower may agree that early repayment will not incur any penalty, enabling flexible payoff.",
+      "page": 2,
+      "section": "VII. PREPAYMENT",
+      "source_text": "Checkbox for 'No Prepayment Penalty' indicating early payments are penalty\u2011free."
+    },
+    {
+      "title": "Unsecured loan possibility",
+      "explanation": "Borrower can elect not to pledge any collateral, limiting the Lender\u2019s claim on the Borrower\u2019s assets.",
+      "page": 2,
+      "section": "VIII. SECURITY",
+      "source_text": "Checkbox for 'Not Pledge Security' stating the loan will be unsecured."
+    }
+  ],
+  "potential_concerns": [
+    {
+      "title": "Late payment fee",
+      "explanation": "If the parties select the fee option, a late payment triggers a charge whose amount is to be specified in the Agreement.",
+      "page": 2,
+      "section": "VI. LATE PAYMENT",
+      "source_text": "Borrower shall be charged a late fee equal to: __________."
+    },
+    {
+      "title": "Prepayment penalty",
+      "explanation": "The Agreement may impose a penalty for payments made before the Due Date, potentially increasing the cost of early settlement.",
+      "page": 2,
+      "section": "VII. PREPAYMENT",
+      "source_text": "If Borrower makes a payment prior to the Due Date, there shall be a prepayment penalty of: __________."
+    },
+    {
+      "title": "Collateral seizure rights",
+      "explanation": "When security is pledged, the Lender can obtain possession of the collateral in its entirety or in an amount equal to the debt, without discount.",
+      "page": 2,
+      "section": "VIII. SECURITY",
+      "source_text": "Lender shall obtain possession of the Collateral: in its entirety and without discount to the amount owed."
+    },
+    {
+      "title": "Acceleration of debt",
+      "explanation": "Lender may declare the full loan amount immediately due if a payment is over 15 days late, if the Borrower defaults, or if pledged assets are transferred.",
+      "page": 3,
+      "section": "X. ACCELERATION",
+      "source_text": "Lender shall have the right to declare the Borrowed Money immediately due if any payment is late >15 days, default, or security transferred."
+    },
+    {
+      "title": "Waiver of notice and consent for changes",
+      "explanation": "Borrower waives various notices and agrees that the Lender may modify terms without notice or Borrower consent.",
+      "page": 3,
+      "section": "XII. WAIVERS BY BORROWER",
+      "source_text": "All parties waive notice of any change or changes and agree that the same may be made without notice or consent."
+    },
+    {
+      "title": "Borrower responsible for attorney\u2019s fees on default",
+      "explanation": "If a payment is missed, Borrower must also pay reasonable attorney\u2019s fees up to the maximum usury rate plus other expenses incurred by the Lender.",
+      "page": 3,
+      "section": "XIII. DISPUTES",
+      "source_text": "Borrower agrees to pay reasonable attorney\u2019s fees not exceeding the maximum usury rate plus all other reasonable expenses."
+    }
+  ],
+  "signatures": [
+    {
+      "field": "Borrower Signature / Date",
+      "page": 4,
+      "section": null,
+      "status": "Required",
+      "meaning": "The Borrower\u2019s signature and date confirm that the Borrower agrees to be bound by all terms of this Agreement.",
+      "attention_note": "Review the entire agreement to ensure all terms are understood before signing.",
+      "appears_blank": true,
+      "bbox": null
+    },
+    {
+      "field": "Lender Signature / Date",
+      "page": 4,
+      "section": null,
+      "status": "Required",
+      "meaning": "The Lender\u2019s signature and date indicate the Lender\u2019s acceptance and execution of the Agreement.",
+      "attention_note": "Confirm that the signatory is authorized to bind the Lender.",
+      "appears_blank": true,
+      "bbox": null
+    },
+    {
+      "field": "Guarantor Signature / Date",
+      "page": 4,
+      "section": "GUARANTOR (IF APPLICABLE)",
+      "status": "Appears Required",
+      "meaning": "The Guarantor\u2019s signature and date show that the Guarantor agrees to be personally liable under the Borrower\u2019s obligations.",
+      "attention_note": "Verify whether a guarantor is required for this transaction before signing.",
+      "appears_blank": true,
+      "bbox": null
+    }
+  ],
+  "checkboxes": [
+    {
+      "text": "\u2610 - Bear Interest. The Borrowed Money shall bear interest at a rate of",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 164.83,
+        "top": 328.62,
+        "x1": 458.03999999999996,
+        "bottom": 340.62,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Annually",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 200.83,
+        "top": 358.39,
+        "x1": 247.27000000000004,
+        "bottom": 370.39,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Monthly",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 200.83,
+        "top": 374.39,
+        "x1": 243.04600000000002,
+        "bottom": 386.39,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Other: __________________________________________.",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 200.83,
+        "top": 390.14,
+        "x1": 234.39400000000003,
+        "bottom": 402.14,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - NOT Bear Interest. There shall be no interest associated with the",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 164.83,
+        "top": 420.14,
+        "x1": 409.13199999999995,
+        "bottom": 432.14,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Weekly Payments. The Borrower agrees to repay the Lender a",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 164.83,
+        "top": 560.19,
+        "x1": 452.4100000000001,
+        "bottom": 572.19,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Monthly Payments. The Borrower agrees to repay the Lender a",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 164.83,
+        "top": 617.72,
+        "x1": 457.19000000000005,
+        "bottom": 629.72,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Lump Sum. The Borrower agrees to repay the Lender, in full, on the",
+      "page": 1,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 1,
+        "x0": 164.83,
+        "top": 675.0,
+        "x1": 413.16200000000003,
+        "bottom": 687.0,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Other. __________________________________________.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 75.54999999999995,
+        "x1": 200.41600000000003,
+        "bottom": 87.54999999999995,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Charged a Late Fee. The Borrower shall be charged a late fee equal to:",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 146.8,
+        "top": 215.60000000000002,
+        "x1": 381.9200000000001,
+        "bottom": 227.60000000000002,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Not Charged a Late Fee. The Borrower shall not be charged a late fee.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 146.8,
+        "top": 259.34000000000003,
+        "x1": 388.71,
+        "bottom": 271.34000000000003,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - A Prepayment Penalty. If the Borrower makes a payment prior to the",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 330.37,
+        "x1": 425.736,
+        "bottom": 342.37,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Interest payments due as if the prepayments were not made.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 200.83,
+        "top": 360.14,
+        "x1": 467.31800000000004,
+        "bottom": 372.14,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Other: __________________________________________.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 75.54999999999995,
+        "x1": 200.41600000000003,
+        "bottom": 87.54999999999995,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - No Prepayment Penalty. If the Borrower makes a payment prior to",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 405.89,
+        "x1": 433.23,
+        "bottom": 417.89,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Pledge Security. The Borrower agrees to secure this Agreement by",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 477.16999999999996,
+        "x1": 449.214,
+        "bottom": 489.16999999999996,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - In its entirety and without discount to the amount owed.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 200.83,
+        "top": 562.19,
+        "x1": 415.1020000000001,
+        "bottom": 574.19,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Equal to the amount owed of which a sale may be required.",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 200.83,
+        "top": 578.2,
+        "x1": 397.87,
+        "bottom": 590.2,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "\u2610 - Not Pledge Security. This Agreement shall not be secured by any",
+      "page": 2,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 2,
+        "x0": 164.83,
+        "top": 607.97,
+        "x1": 434.452,
+        "bottom": 619.97,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "notice of such change or changes and agree that the same may be made without",
+      "page": 3,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 3,
+        "x0": 108.05,
+        "top": 460.16999999999996,
+        "x1": 344.87,
+        "bottom": 472.16999999999996,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "text": "notice or consent of any of them.",
+      "page": 3,
+      "section": null,
+      "classification": "Unknown",
+      "what_it_means": null,
+      "what_happens_if_selected": null,
+      "mandatory_or_optional_evidence": null,
+      "appears_checked": null,
+      "bbox": {
+        "page": 3,
+        "x0": 108.05,
+        "top": 474.16999999999996,
+        "x1": 282.062,
+        "bottom": 486.16999999999996,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    }
+  ],
+  "consents": [],
+  "actions": [
+    {
+      "action_type": "Signature Required",
+      "label": "Borrower Signature / Date",
+      "page": 4,
+      "source": {
+        "page": 4,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Signature Required",
+      "label": "Lender Signature / Date",
+      "page": 4,
+      "source": {
+        "page": 4,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Signature Required",
+      "label": "Guarantor Signature / Date",
+      "page": 4,
+      "source": {
+        "page": 4,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Bear Interest. The Borrowed Money shall bear interest at",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Annually",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Monthly",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Other: __________________________________________.",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - NOT Bear Interest. There shall be no interest associated",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Weekly Payments. The Borrower agrees to repay the Lender",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Monthly Payments. The Borrower agrees to repay the Lende",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Lump Sum. The Borrower agrees to repay the Lender, in fu",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Other. __________________________________________.",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Charged a Late Fee. The Borrower shall be charged a late",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Not Charged a Late Fee. The Borrower shall not be charge",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - A Prepayment Penalty. If the Borrower makes a payment pr",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Interest payments due as if the prepayments were not mad",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Other: __________________________________________.",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - No Prepayment Penalty. If the Borrower makes a payment p",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Pledge Security. The Borrower agrees to secure this Agre",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - In its entirety and without discount to the amount owed.",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Equal to the amount owed of which a sale may be required",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "\u2610 - Not Pledge Security. This Agreement shall not be secured",
+      "page": 2,
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "notice of such change or changes and agree that the same may",
+      "page": 3,
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Needs Review",
+      "label": "notice or consent of any of them.",
+      "page": 3,
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "missing_fields": [
+    {
+      "field": "Blank (_____________________, 20____, is between:)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (Borrower: _____________________ with a mailing address of)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (__________________________________________ (\u201cBorrower\u201d) and)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (Lender: _____________________ with a mailing address of)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (__________________________________________ and agrees to len)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (the Borrower is $_____________________ (\u201cBorrowed Money\u201d).)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (____% compounded: (check one))",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (shall be due and payable on _____________________, 20____ (\u201c)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (payment of $_____________________ on the ___________________)",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (payment of $_____________________ on the ____ of each month )",
+      "page": 1,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (VI. LATE PAYMENT. If the Borrower is late by more than ____ )",
+      "page": 2,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (____________________________________________________________)",
+      "page": 2,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (pledging the following collateral: _________________________)",
+      "page": 2,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (laws located in the state of _____________________ (\u201cGoverni)",
+      "page": 3,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Signature (Borrower\u2019s Signature: _____________________ Date: __________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (Print Name: _____________________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Signature (Lender\u2019s Signature: _____________________ Date: ____________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (Print Name: _____________________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (The Guarantor, known as _____________________, agrees to be )",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Signature (Guarantor\u2019s Signature: _____________________ Date: _________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    },
+    {
+      "field": "Blank (Print Name: _____________________)",
+      "page": 4,
+      "reason": "This field appears incomplete."
+    }
+  ],
+  "questions_to_consider": [
+    "What is the exact interest rate and compounding frequency, if any, for the Borrowed Money?",
+    "Will a late fee be charged if a payment is more than 15 days late, and if so, what is the amount?",
+    "Is there any pre\u2011payment penalty, and what are the terms if the Borrower wishes to pay early?",
+    "What specific collateral (Security) is being pledged, and what happens to it if the Borrower defaults?",
+    "Under what exact circumstances can the Lender accelerate the loan and demand immediate repayment?",
+    "What state law will govern the agreement, and how might that affect the Borrower\u2019s rights?",
+    "Can the Lender assign its rights to another party without the Borrower\u2019s consent?",
+    "What are the borrower\u2019s obligations regarding attorney\u2019s fees and other expenses if a payment is missed?"
+  ],
+  "before_you_sign_checklist": [
+    "Verify your personal information (name, address, account/CNIC number)",
+    "Review the fees and charges listed in Financial Terms",
+    "Review the early settlement / prepayment conditions",
+    "Review what can put you in default",
+    "Review how and when this agreement can be terminated",
+    "Review your obligations under this agreement",
+    "Review the rights granted to the bank/institution",
+    "Review every signature, initial, and date field before signing",
+    "Complete the 21 field(s) that appear incomplete"
+  ],
+  "attention_score": {
+    "level": "HIGH",
+    "factors": [
+      "Multiple financial obligations",
+      "Early settlement conditions",
+      "Default provisions present",
+      "Multiple 'Important' attention areas"
+    ],
+    "disclaimer": "This score is a document-review indicator, not a legal or financial judgment.",
+    "methodology_note": "Calculated from a fixed checklist of document characteristics (fees, early settlement, default clauses, authorizations, termination restrictions, high-severity attention areas). Each present characteristic adds one point; 0-1 = LOW, 2-3 = MODERATE, 4+ = HIGH."
+  },
+  "citations": [],
+  "processing_notes": [
+    "The 'important terms' section could not be fully analyzed (Extra data: line 10 column 4 (char 306))."
+  ],
+  "voice_summary": "Overall Summary: This loan agreement requires the Borrower to repay the principal on a set schedule, with interest, possible late fees, pre\u2011payment penalties, and pledged collateral. Risk Level: HIGH (attention score). Major Risks: late\u2011payment fee, pre\u2011payment penalty, collateral seizure on default, acceleration of the debt, waiver of notices, borrower liable for attorney\u2019s fees. Red Flags: waiver of protest and notices, lender\u2019s right to accelerate and seize collateral, attorney\u2011fee clause. Financial Obligations: repay loan as scheduled, pay interest, late\u2011payment fee (amount not shown), pre\u2011payment penalty (amount not shown), maintain pledged security, cover attorney\u2019s fees if default occurs. Penalties: late fee, pre\u2011payment penalty, acceleration of full balance, attorney\u2019s fees and expenses. Important Dates: none specified in the provided text. Termination Conditions: agreement ends when the Borrower fully repays the loan; either party may end upon repayment. Final Warning: with a HIGH attention score, review the fee amounts, collateral terms, and waiver clauses before proceeding."
+}

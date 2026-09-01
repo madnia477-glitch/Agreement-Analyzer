@@ -1,0 +1,638 @@
+{
+  "document_overview": {
+    "agreement_type": "Service Agreement",
+    "parties": [
+      "BrightWeb Solutions Ltd.",
+      "Ahmed Khan"
+    ],
+    "institution": null,
+    "product": "Website development, maintenance, hosting, and technical support services",
+    "version": null,
+    "effective_date": "September 1, 2026",
+    "page_count": 3,
+    "detected_confidence": "medium"
+  },
+  "executive_summary": "This Service Agreement, effective September 1, 2026, sets out the relationship between BrightWeb Solutions Ltd. (the Service Provider) and Ahmed Khan (the Client) for website development, maintenance, hosting, and technical support. The Client will pay a one-time setup fee of USD 500 and a monthly service fee of USD 150, with payments due on the 5th of each month, and late fees may apply if payments are overdue. The initial term is twelve months and will automatically renew for additional twelve\u2011month periods unless either party gives written cancellation notice at least sixty days before the term ends; renewal fees may change with thirty\u2011day notice. The agreement includes provisions for early termination, liability limits, confidentiality, dispute resolution through arbitration in London, and governing law of England and Wales.",
+  "financial_terms": [
+    {
+      "label": "Setup Fee",
+      "amount_or_rule": "USD 500",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": false
+    },
+    {
+      "label": "Monthly Service Fee",
+      "amount_or_rule": "USD 150",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": false
+    },
+    {
+      "label": "Late Payment Fee",
+      "amount_or_rule": "5% of the outstanding amount",
+      "calculation_shown": true,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": false
+    },
+    {
+      "label": "Early Termination Fee",
+      "amount_or_rule": "50% of all remaining monthly service fees for the unused portion of the contract",
+      "calculation_shown": true,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": false
+    },
+    {
+      "label": "Renewal Fee",
+      "amount_or_rule": "Based on the Service Provider's then-current pricing",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    }
+  ],
+  "obligations": [
+    {
+      "obligation": "Pay setup fee",
+      "meaning": "Client must pay a one-time fee of USD 500 for initial setup",
+      "trigger": "Effective date of the Agreement",
+      "frequency": "One-time",
+      "consequence": "Payment is required to receive services",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Pay monthly service fee",
+      "meaning": "Client must pay USD 150 each month for ongoing services",
+      "trigger": "5th day of each month",
+      "frequency": "Monthly",
+      "consequence": "Payment is required to maintain services",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Provide accurate information and materials",
+      "meaning": "Client must supply correct information, images, documents, passwords, and other materials needed for the services",
+      "trigger": "When required for service performance",
+      "frequency": "Ongoing",
+      "consequence": "Failure may affect service delivery",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Ensure no IP infringement",
+      "meaning": "Client must ensure that all supplied materials do not violate third\u2011party intellectual property rights",
+      "trigger": "When providing materials to the Service Provider",
+      "frequency": "Ongoing",
+      "consequence": "Violation could constitute a breach",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Maintain confidentiality",
+      "meaning": "Client must keep confidential information received from the Service Provider secret for the term and three years after termination",
+      "trigger": "Upon receipt of confidential information",
+      "frequency": "Throughout term and 3 years post\u2011termination",
+      "consequence": "Breach would violate the Agreement",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Attempt good\u2011faith dispute negotiation",
+      "meaning": "Client must first try to resolve any dispute through good\u2011faith negotiations before arbitration",
+      "trigger": "When a dispute arises",
+      "frequency": "Per dispute",
+      "consequence": "If not resolved within 30 days, arbitration follows",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Provide early termination notice",
+      "meaning": "Client may end the Agreement early by giving thirty (30) days written notice",
+      "trigger": "Desire to terminate before the end of the initial term",
+      "frequency": "One\u2011time per early termination",
+      "consequence": "Client must pay an early termination fee",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Pay early termination fee",
+      "meaning": "If terminating early, Client must pay 50% of the remaining monthly fees for the unused contract portion",
+      "trigger": "After giving early termination notice",
+      "frequency": "One\u2011time per early termination",
+      "consequence": "Fee is due in addition to any other amounts owed",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Provide cancellation notice to avoid renewal",
+      "meaning": "Client must give written notice at least sixty (60) days before the end of the current term to prevent automatic renewal",
+      "trigger": "Before the expiration date of the term",
+      "frequency": "One\u2011time per renewal period",
+      "consequence": "Failure results in automatic renewal for another twelve\u2011month period",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Pay late payment fee",
+      "meaning": "If a payment is more than five (5) days late, Client must pay an additional fee equal to 5% of the outstanding amount",
+      "trigger": "Payment overdue by more than 5 days",
+      "frequency": "Per late payment",
+      "consequence": "Additional 5% fee is added to the amount due",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Accept service changes by continued use",
+      "meaning": "If the Service Provider gives written notice of changes, the Client\u2019s continued use of the services constitutes acceptance of the updated terms",
+      "trigger": "After written notice of changes is provided",
+      "frequency": "Ongoing after each notice",
+      "consequence": "Client is bound by the new terms",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "bank_rights": [
+    {
+      "right": "Modify service features, pricing, or policies",
+      "conditions": "Service Provider may provide written notice; continued client use constitutes acceptance",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Suspend services for non\u2011payment",
+      "conditions": "If payment remains unpaid for more than thirty (30) days",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Charge late payment fee",
+      "conditions": "If payment remains unpaid for more than five (5) days, a fee of 5% of the outstanding amount may be charged",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Terminate agreement immediately",
+      "conditions": "If the Client fails to make payment or materially breaches any provision of the Agreement",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Change renewal period pricing",
+      "conditions": "Service Provider may change pricing for the renewal period by giving thirty (30) days written notice",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Collect fees during service suspension",
+      "conditions": "Client remains responsible for all fees during any period of service suspension",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Resolve disputes through binding arbitration",
+      "conditions": "If a dispute is not resolved within thirty (30) days of negotiation, it shall be resolved by arbitration in London, United Kingdom",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "default_clauses": [
+    {
+      "trigger": "Payment remains unpaid for more than five (5) days after the due date",
+      "stated_consequence": "Client will be charged a late payment fee equal to 5% of the outstanding amount",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "trigger": "Payment remains unpaid for more than thirty (30) days after the due date",
+      "stated_consequence": "Service Provider may suspend all services; Client remains responsible for all fees during any period of service suspension",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "trigger": "Client fails to make payment or materially breaches any provision of the Agreement",
+      "stated_consequence": "Service Provider may terminate the Agreement immediately",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "termination_clauses": [
+    {
+      "who_can_terminate": "Client",
+      "when": "Before the end of the initial twelve-month term",
+      "how": "By providing thirty (30) days written notice",
+      "notice_required": "30 days written notice",
+      "fee": "Early termination fee equal to 50% of all remaining monthly service fees for the unused portion of the contract",
+      "consequences": "Agreement ends; client must pay the early termination fee",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "who_can_terminate": "Service Provider",
+      "when": "If the client fails to make payment or materially breaches any provision",
+      "how": "May terminate immediately",
+      "notice_required": null,
+      "fee": null,
+      "consequences": "Agreement ends immediately",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "who_can_terminate": "Either party",
+      "when": "By providing written cancellation notice at least sixty (60) days before the end of the current term",
+      "how": "Written notice",
+      "notice_required": "60 days before expiration",
+      "fee": null,
+      "consequences": "Agreement will not automatically renew for another twelve-month period",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "early_settlement": {
+    "present": false,
+    "conditions": null,
+    "charges": null,
+    "rebate": null,
+    "notice_requirement": null,
+    "source": null
+  },
+  "attention_areas": [
+    {
+      "level": "Important",
+      "topic": "Automatic renewal and price changes",
+      "what_document_says": "After the initial term, the agreement renews automatically for another 12\u2011month period unless written cancellation is given 60 days before expiration; renewal fees are based on the provider\u2019s then\u2011current pricing and the provider may change pricing with 30 days written notice.",
+      "why_it_matters": "The client could be bound to future fees that may be higher than the original rate without actively reviewing the changes.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Early termination fee",
+      "what_document_says": "If the client ends the agreement early, they must pay a fee equal to 50% of all remaining monthly service fees for the unused portion of the contract.",
+      "why_it_matters": "This creates a substantial cost if the client needs to end the relationship before the 12\u2011month term.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Liability limitation",
+      "what_document_says": "The service provider limits its liability to the total amount of fees paid by the client during the previous three months and disclaims indirect, incidental, special, consequential, or lost\u2011profit damages.",
+      "why_it_matters": "The client\u2019s ability to recover damages is capped, which may affect risk exposure.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Binding arbitration",
+      "what_document_says": "Disputes that cannot be resolved through good\u2011faith negotiation within 30 days must be settled by binding arbitration in London, United Kingdom.",
+      "why_it_matters": "Arbitration limits the client\u2019s ability to pursue court action and may affect how disputes are resolved.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Provider\u2019s right to modify terms",
+      "what_document_says": "The service provider may modify service features, pricing, or policies by providing written notice; continued use of the services after the effective date of the changes constitutes acceptance.",
+      "why_it_matters": "The client could be bound by new terms without explicit agreement, impacting costs or service scope.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Attention",
+      "topic": "Late payment fee and service suspension",
+      "what_document_says": "Payments unpaid for more than five days incur a late fee of 5% of the outstanding amount; if unpaid for more than thirty days, the provider may suspend all services while the client remains responsible for all fees.",
+      "why_it_matters": "Additional fees and possible interruption of services increase the cost of delayed payments.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Attention",
+      "topic": "Client responsibilities for materials",
+      "what_document_says": "The client must provide accurate information, images, documents, passwords, and ensure supplied materials do not infringe third\u2011party intellectual property rights.",
+      "why_it_matters": "Failure to meet these obligations could lead to breach of contract or additional liabilities.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Informational",
+      "topic": "Confidentiality obligations",
+      "what_document_says": "Both parties must keep each other\u2019s confidential information private and not disclose it to third parties, with the duty lasting three years after termination.",
+      "why_it_matters": "Sets expectations for handling sensitive information during and after the relationship.",
+      "source": {
+        "page": 2,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "important_terms": [],
+  "potential_benefits": [
+    {
+      "title": "Clear payment schedule",
+      "explanation": "Monthly service fees of USD 150 are due on the 5th day of each month, providing a predictable billing cadence.",
+      "page": 1,
+      "section": "Fees and Payment",
+      "source_text": "The monthly service fee is due on the 5th day of each month."
+    },
+    {
+      "title": "Ownership of final website content",
+      "explanation": "Upon full payment, the client owns the final website content created specifically for them.",
+      "page": 2,
+      "section": "Intellectual Property",
+      "source_text": "Upon full payment of all outstanding amounts, the Client will own the final website content specifically created for the Client."
+    },
+    {
+      "title": "Fixed initial term",
+      "explanation": "The agreement starts on September 1, 2026 and runs for a defined twelve\u2011month period, giving the client a known commitment horizon.",
+      "page": 1,
+      "section": "Contract Term",
+      "source_text": "The initial term of this Agreement is twelve (12) months beginning on September 1, 2026 and ending on August 31, 2027."
+    },
+    {
+      "title": "Confidentiality protection",
+      "explanation": "Both parties are contractually required to keep each other's confidential information private for three years after termination.",
+      "page": 2,
+      "section": "Data and Confidentiality",
+      "source_text": "Each party agrees to keep confidential information received from the other party confidential... The confidentiality obligations will continue for three (3) years after termination."
+    },
+    {
+      "title": "Defined dispute process",
+      "explanation": "Disputes must first go through good\u2011faith negotiation before moving to arbitration, offering an initial opportunity to resolve issues informally.",
+      "page": 2,
+      "section": "Dispute Resolution",
+      "source_text": "Any dispute arising from this Agreement shall first be addressed through good-faith negotiations... If the dispute cannot be resolved within thirty (30) days, the dispute shall be resolved through binding arbitration."
+    }
+  ],
+  "potential_concerns": [
+    {
+      "title": "Early termination charge",
+      "explanation": "If the client ends the agreement before the end of the initial twelve\u2011month term, they must pay a fee equal to 50% of the remaining monthly service fees.",
+      "page": 1,
+      "section": "Early Termination",
+      "source_text": "If the Client terminates the Agreement before the end of the initial term, the Client must pay an early termination fee equal to 50% of all remaining monthly service fees for the unused portion of the contract."
+    },
+    {
+      "title": "Late payment penalty",
+      "explanation": "Payments overdue by more than five days incur a late fee of 5% of the outstanding amount.",
+      "page": 1,
+      "section": "Late Payment",
+      "source_text": "If any payment remains unpaid for more than five (5) days after the due date, the Client will be charged a late payment fee equal to 5% of the outstanding amount."
+    },
+    {
+      "title": "Service suspension for non\u2011payment",
+      "explanation": "If payment remains unpaid for more than thirty days, the provider may suspend all services while the client remains liable for all fees.",
+      "page": 1,
+      "section": "Late Payment",
+      "source_text": "If payment remains unpaid for more than thirty (30) days, the Service Provider may suspend all services. The Client remains responsible for all fees during any period of service suspension."
+    },
+    {
+      "title": "Automatic renewal with price changes",
+      "explanation": "The agreement renews automatically unless cancelled 60 days prior, and renewal fees are based on the provider\u2019s current pricing, which may be changed with 30 days notice.",
+      "page": 1,
+      "section": "Automatic Renewal",
+      "source_text": "Unless written cancellation notice is received at least sixty (60) days before the expiration date, the Agreement will automatically renew... Renewal fees will be based on the Service Provider's then-current pricing. The Service Provider may change its pricing for the renewal period by providing thirty (30) days written notice."
+    },
+    {
+      "title": "Liability cap",
+      "explanation": "The provider\u2019s total liability is limited to the amount of fees paid by the client in the previous three months and excludes indirect or consequential damages.",
+      "page": 2,
+      "section": "Liability",
+      "source_text": "The total liability of the Service Provider under this Agreement will not exceed the total amount of fees paid by the Client during the previous three (3) months."
+    },
+    {
+      "title": "Binding arbitration requirement",
+      "explanation": "Unresolved disputes must be settled by binding arbitration in London, limiting court recourse.",
+      "page": 2,
+      "section": "Dispute Resolution",
+      "source_text": "If the dispute cannot be resolved within thirty (30) days, the dispute shall be resolved through binding arbitration. The arbitration shall take place in London, United Kingdom."
+    },
+    {
+      "title": "Provider can modify terms",
+      "explanation": "The provider may change service features, pricing, or policies with written notice, and continued use of the services after the change date is deemed acceptance.",
+      "page": 2,
+      "section": "Changes to the Agreement",
+      "source_text": "The Service Provider may modify service features, pricing, or policies by providing written notice to the Client. Continued use of the services after the effective date of the changes will constitute acceptance of the updated terms."
+    },
+    {
+      "title": "Client material obligations",
+      "explanation": "The client must supply accurate information and ensure that supplied materials do not infringe third\u2011party intellectual property rights.",
+      "page": 2,
+      "section": "Client Responsibility",
+      "source_text": "The Client is responsible for providing accurate information, images, documents, passwords, and other materials... The Client is responsible for ensuring that all materials supplied to the Service Provider do not violate any third-party intellectual property rights."
+    }
+  ],
+  "signatures": [
+    {
+      "field": "Effective Date",
+      "page": 1,
+      "section": null,
+      "status": "Appears Required",
+      "meaning": "Specifies the date on which the agreement becomes effective.",
+      "attention_note": "Confirm that the effective date matches the intended start date of the services.",
+      "appears_blank": false,
+      "bbox": {
+        "page": 1,
+        "x0": 52.8,
+        "top": 125.76649999999995,
+        "x1": 114.5785,
+        "bottom": 135.26649999999995,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    },
+    {
+      "field": "Date",
+      "page": 3,
+      "section": null,
+      "status": "Appears Required",
+      "meaning": "Indicates the date the document was signed or finalized.",
+      "attention_note": "Verify that this date reflects the actual signing date.",
+      "appears_blank": false,
+      "bbox": {
+        "page": 3,
+        "x0": 52.8,
+        "top": 54.76649999999995,
+        "x1": 75.50500000000001,
+        "bottom": 64.26649999999995,
+        "page_width": 612.0,
+        "page_height": 792.0
+      }
+    }
+  ],
+  "checkboxes": [],
+  "consents": [],
+  "actions": [
+    {
+      "action_type": "Information Required",
+      "label": "Effective Date",
+      "page": 1,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "action_type": "Information Required",
+      "label": "Date",
+      "page": 3,
+      "source": {
+        "page": 3,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "missing_fields": [],
+  "questions_to_consider": [
+    "How will the renewal pricing be determined, and will the Service Provider provide a clear quote before the renewal period begins?",
+    "What specific actions will the Service Provider take if a payment is more than thirty days overdue, beyond the stated right to suspend services?",
+    "How is the early termination fee calculated if the Client ends the agreement before the initial twelve\u2011month term?",
+    "What are the exact confidentiality obligations after termination, and what types of information are covered?",
+    "What is the scope of the Service Provider's liability limitation, and does it cover any potential losses the Client might incur?",
+    "Can the Service Provider change service features or policies during the term, and how will the Client be notified of such changes?",
+    "What process will be followed for the binding arbitration in London, and what costs might the Client be responsible for?"
+  ],
+  "before_you_sign_checklist": [
+    "Verify your personal information (name, address, account/CNIC number)",
+    "Review the fees and charges listed in Financial Terms",
+    "Review what can put you in default",
+    "Review how and when this agreement can be terminated",
+    "Review your obligations under this agreement",
+    "Review the rights granted to the bank/institution",
+    "Review every signature, initial, and date field before signing"
+  ],
+  "attention_score": {
+    "level": "HIGH",
+    "factors": [
+      "Multiple financial obligations",
+      "Default provisions present",
+      "Termination restrictions or fees",
+      "Multiple 'Important' attention areas"
+    ],
+    "disclaimer": "This score is a document-review indicator, not a legal or financial judgment.",
+    "methodology_note": "Calculated from a fixed checklist of document characteristics (fees, early settlement, default clauses, authorizations, termination restrictions, high-severity attention areas). Each present characteristic adds one point; 0-1 = LOW, 2-3 = MODERATE, 4+ = HIGH."
+  },
+  "citations": [],
+  "processing_notes": [
+    "The 'important terms' section could not be fully analyzed (Extra data: line 10 column 4 (char 400))."
+  ],
+  "voice_summary": null
+}

@@ -1,0 +1,503 @@
+{
+  "document_overview": {
+    "agreement_type": "Logistics Services Agreement",
+    "parties": [
+      "Commercial Company",
+      "Logistics Company"
+    ],
+    "institution": null,
+    "product": null,
+    "version": null,
+    "effective_date": null,
+    "page_count": 2,
+    "detected_confidence": "medium"
+  },
+  "executive_summary": "The contract is a two\u2011year agreement between a commercial company and a logistics company for storage and transportation services (Evidence page=1 id=0). It includes monthly fees, service levels, and responsibilities for the goods, but several clauses are vague. The agreement mentions that the carrier is liable during transport while the client bears risk after delivery to the warehouse, without clearly defining the exact moment risk transfers (Evidence page=1 id=0). It references insurance coverage but does not specify the amount, covered risks, or deductible, and sets a maximum liability limit without clarifying its scope (Evidence page=1 id=0). The contract requires incident reporting \u201cimmediately\u201d but does not define the method or a precise deadline, which could affect entitlement to compensation (Evidence page=1 id=0).",
+  "financial_terms": [
+    {
+      "label": "Monthly Fee",
+      "amount_or_rule": "monthly fees (amount not specified)",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Insurance",
+      "amount_or_rule": "insurance coverage exists but value, scope, and deductible not specified",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    },
+    {
+      "label": "Maximum Liability Limit",
+      "amount_or_rule": "a maximum liability limit is set but the amount is not disclosed",
+      "calculation_shown": false,
+      "assumptions": null,
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      },
+      "needs_review": true
+    }
+  ],
+  "obligations": [
+    {
+      "obligation": "Report incidents immediately",
+      "meaning": "The customer must notify the logistics provider of any incident affecting the goods as soon as it occurs.",
+      "trigger": "Occurrence of an incident or damage to the goods",
+      "frequency": "Each incident",
+      "consequence": "Failure to report promptly may lead to disputes over eligibility for compensation",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "obligation": "Accept risk after goods reach the warehouse",
+      "meaning": "The customer bears the risk of loss or damage to the goods once they have been delivered to the warehouse.",
+      "trigger": "Delivery of goods to the warehouse",
+      "frequency": "Ongoing for the storage period",
+      "consequence": "The customer becomes liable for any subsequent damage or loss",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "bank_rights": [
+    {
+      "right": "Liability limited to transport period",
+      "conditions": "The logistics provider is responsible only while the goods are in transit; after delivery to the warehouse the risk transfers to the customer",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "right": "Maximum liability cap",
+      "conditions": "The provider\u2019s overall liability for loss or damage is limited to a predefined maximum amount",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "default_clauses": [],
+  "termination_clauses": [],
+  "early_settlement": {
+    "present": false,
+    "conditions": null,
+    "charges": null,
+    "rebate": null,
+    "notice_requirement": null,
+    "source": null
+  },
+  "attention_areas": [
+    {
+      "level": "Important",
+      "topic": "Risk transfer point",
+      "what_document_says": "The contract says the carrier is responsible during transport, but another clause says the client bears risk after the goods reach the warehouse, without specifying the exact moment of transfer.",
+      "why_it_matters": "Unclear timing can affect who is liable for damage and what compensation may be owed.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Liability limit clarity",
+      "what_document_says": "There is a maximum liability cap, but the contract does not explain whether it covers damage, loss, gross negligence, or confidentiality breaches.",
+      "why_it_matters": "The scope of the cap determines the maximum recovery a customer can obtain.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Important",
+      "topic": "Insurance coverage details",
+      "what_document_says": "The contract references insurance but does not state the coverage amount, covered risks, or deductible.",
+      "why_it_matters": "Without clear coverage terms, parties may disagree on whether a loss is insured.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Attention",
+      "topic": "Incident reporting requirement",
+      "what_document_says": "The contract requires reporting incidents \"immediately\" but does not define the method or a precise deadline.",
+      "why_it_matters": "Ambiguity could lead to disputes over whether a report was timely enough to trigger compensation.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    },
+    {
+      "level": "Informational",
+      "topic": "Fee structure",
+      "what_document_says": "The agreement includes monthly fees for storage and transport services, though exact amounts are not listed in the excerpt.",
+      "why_it_matters": "Knowing the fee schedule helps the customer anticipate ongoing costs.",
+      "source": {
+        "page": 1,
+        "section": null,
+        "quote": null
+      }
+    }
+  ],
+  "important_terms": [
+    {
+      "term": "\u0645\u062f\u0629 \u0627\u0644\u0639\u0642\u062f",
+      "category": "Other Important Term",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0627\u0644\u0639\u0642\u062f \u0644\u0645\u062f\u0629 \u0639\u0627\u0645\u064a\u0646",
+      "explanation": "The contract is set for a fixed two\u2011year period.",
+      "confidence": 0.95,
+      "bbox": null
+    },
+    {
+      "term": "\u0631\u0633\u0648\u0645 \u0634\u0647\u0631\u064a\u0629",
+      "category": "Payment",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u062a\u0636\u0645\u0646 \u0627\u0644\u0639\u0642\u062f \u0631\u0633\u0648\u0645\u0627\u064b \u0634\u0647\u0631\u064a\u0629",
+      "explanation": "The customer must pay a recurring monthly fee for the logistics service.",
+      "confidence": 0.96,
+      "bbox": null
+    },
+    {
+      "term": "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u062e\u062f\u0645\u0629",
+      "category": "Obligation",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0645\u0633\u062a\u0648\u064a\u0627\u062a \u062e\u062f\u0645\u0629 \u0645\u062d\u062f\u062f\u0629 \u0641\u064a \u0627\u0644\u0639\u0642\u062f",
+      "explanation": "The provider is required to meet defined service\u2011level standards.",
+      "confidence": 0.94,
+      "bbox": null
+    },
+    {
+      "term": "\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0627\u0644\u0628\u0636\u0627\u0626\u0639",
+      "category": "Obligation",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0639\u0646 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u062a\u062e\u0632\u064a\u0646 \u0648\u0627\u0644\u0646\u0642\u0644",
+      "explanation": "The agreement assigns liability for the goods to the parties at different stages.",
+      "confidence": 0.95,
+      "bbox": null
+    },
+    {
+      "term": "\u0646\u0642\u0637\u0629 \u0627\u0646\u062a\u0642\u0627\u0644 \u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+      "category": "Other Important Term",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u062c\u0628 \u062a\u062d\u062f\u064a\u062f \u0644\u062d\u0638\u0629 \u0627\u0646\u062a\u0642\u0627\u0644 \u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+      "explanation": "The contract should specify the exact moment when risk for loss or damage passes from one party to the other.",
+      "confidence": 0.93,
+      "bbox": null
+    },
+    {
+      "term": "\u0646\u0642\u0637\u0629 \u0627\u0646\u062a\u0642\u0627\u0644 \u0627\u0644\u062d\u064a\u0627\u0632\u0629",
+      "category": "Other Important Term",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u062a\u062d\u062f\u064a\u062f \u0646\u0642\u0637\u0629 \u0627\u0646\u062a\u0642\u0627\u0644 \u0627\u0644\u062d\u064a\u0627\u0632\u0629 \u0648\u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+      "explanation": "The agreement needs to state when physical possession of the goods changes hands.",
+      "confidence": 0.93,
+      "bbox": null
+    },
+    {
+      "term": "\u0627\u0644\u062a\u0623\u0645\u064a\u0646",
+      "category": "Other Important Term",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0634\u064a\u0631 \u0627\u0644\u0639\u0642\u062f \u0625\u0644\u0649 \u0648\u062c\u0648\u062f \u062a\u0623\u0645\u064a\u0646 \u0644\u0643\u0646\u0647 \u0644\u0627 \u064a\u062d\u062f\u062f \u0642\u064a\u0645\u0629 \u0627\u0644\u062a\u063a\u0637\u064a\u0629",
+      "explanation": "Insurance is mentioned, but the coverage amount and covered risks are not defined.",
+      "confidence": 0.94,
+      "bbox": null
+    },
+    {
+      "term": "\u062d\u062f \u0623\u0642\u0635\u0649 \u0644\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629",
+      "category": "Penalty",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0648\u062c\u062f \u062d\u062f \u0623\u0642\u0635\u0649 \u0644\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629",
+      "explanation": "There is a maximum cap on the amount one party can be held liable for.",
+      "confidence": 0.92,
+      "bbox": null
+    },
+    {
+      "term": "\u0627\u0633\u062a\u062b\u0646\u0627\u0621\u0627\u062a \u062d\u062f\u0648\u062f \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629",
+      "category": "Penalty",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u062a\u0648\u0636\u064a\u062d \u0627\u0633\u062a\u062b\u0646\u0627\u0621\u0627\u062a \u062d\u062f\u0648\u062f \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629",
+      "explanation": "The contract may list situations where the liability cap does not apply.",
+      "confidence": 0.88,
+      "bbox": null
+    },
+    {
+      "term": "\u0627\u0644\u0625\u0628\u0644\u0627\u063a \u0639\u0646 \u0627\u0644\u062d\u0648\u0627\u062f\u062b",
+      "category": "Obligation",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0637\u0644\u0628 \u0627\u0644\u0639\u0642\u062f \u0627\u0644\u0625\u0628\u0644\u0627\u063a \u0639\u0646 \u0627\u0644\u062d\u0648\u0627\u062f\u062b \u00ab\u0641\u0648\u0631\u0627\u064b\u00bb",
+      "explanation": "Parties must report any incident immediately, though the exact method is not defined.",
+      "confidence": 0.94,
+      "bbox": null
+    },
+    {
+      "term": "\u0645\u0647\u0644\u0629 \u0627\u0644\u0625\u0628\u0644\u0627\u063a",
+      "category": "Date",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0648\u0636\u0639 \u0645\u0647\u0644\u0629 \u0648\u0627\u0636\u062d\u0629 \u0644\u0644\u0625\u0628\u0644\u0627\u063a",
+      "explanation": "A clear deadline for reporting incidents should be set in the contract.",
+      "confidence": 0.89,
+      "bbox": null
+    },
+    {
+      "term": "\u0622\u0644\u064a\u0629 \u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0627\u062a",
+      "category": "Dispute Resolution",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0625\u0636\u0627\u0641\u0629 \u0622\u0644\u064a\u0629 \u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0627\u062a",
+      "explanation": "The agreement should include a process for assessing and settling claims.",
+      "confidence": 0.9,
+      "bbox": null
+    },
+    {
+      "term": "\u0633\u062c\u0644\u0627\u062a \u0627\u0644\u062a\u0633\u0644\u064a\u0645",
+      "category": "Data Privacy",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0633\u062c\u0644\u0627\u062a \u0627\u0644\u062a\u0633\u0644\u064a\u0645 \u0648\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u0644\u0641 \u0648\u0648\u062b\u0627\u0626\u0642 \u0627\u0644\u0634\u062d\u0646",
+      "explanation": "Delivery records will be used as evidence to interpret responsibilities.",
+      "confidence": 0.88,
+      "bbox": null
+    },
+    {
+      "term": "\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u0644\u0641",
+      "category": "Data Privacy",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u0644\u0641",
+      "explanation": "Damage reports document the condition of goods and support claim decisions.",
+      "confidence": 0.87,
+      "bbox": null
+    },
+    {
+      "term": "\u0648\u062b\u0627\u0626\u0642 \u0627\u0644\u062a\u0623\u0645\u064a\u0646",
+      "category": "Data Privacy",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0648\u062b\u0627\u0626\u0642 \u0627\u0644\u062a\u0623\u0645\u064a\u0646",
+      "explanation": "Insurance documents provide proof of coverage and policy limits.",
+      "confidence": 0.89,
+      "bbox": null
+    },
+    {
+      "term": "\u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u062f\u062b",
+      "category": "Obligation",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u062f\u062b",
+      "explanation": "Formal notices of incidents must be issued according to the contract.",
+      "confidence": 0.86,
+      "bbox": null
+    },
+    {
+      "term": "\u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631",
+      "category": "Payment",
+      "importance": "medium",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631 \u0648\u0627\u0644\u0645\u0631\u0627\u0633\u0644\u0627\u062a",
+      "explanation": "Invoices detail the amounts due for the logistics services.",
+      "confidence": 0.9,
+      "bbox": null
+    },
+    {
+      "term": "\u0623\u0648\u0627\u0645\u0631 \u0627\u0644\u0634\u062d\u0646",
+      "category": "Other Important Term",
+      "importance": "low",
+      "page": 2,
+      "section": null,
+      "source_text": "\u0623\u0648\u0627\u0645\u0631 \u0627\u0644\u0634\u062d\u0646",
+      "explanation": "Shipping orders direct the movement of goods and are part of the contract documentation.",
+      "confidence": 0.84,
+      "bbox": null
+    },
+    {
+      "term": "\u0633\u062c\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639",
+      "category": "Data Privacy",
+      "importance": "low",
+      "page": 2,
+      "section": null,
+      "source_text": "\u0633\u062c\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639",
+      "explanation": "Warehouse records track storage periods and conditions of the goods.",
+      "confidence": 0.85,
+      "bbox": null
+    },
+    {
+      "term": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+      "category": "Other Important Term",
+      "importance": "medium",
+      "page": 2,
+      "section": null,
+      "source_text": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+      "explanation": "The analysis highlights the risk to the client if liability cannot be proven.",
+      "confidence": 0.88,
+      "bbox": null
+    },
+    {
+      "term": "\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0634\u0631\u0643\u0629 \u0627\u0644\u0646\u0642\u0644 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0646\u0642\u0644",
+      "category": "Obligation",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0634\u0631\u0643\u0629 \u0627\u0644\u0646\u0642\u0644 \u0645\u0633\u0624\u0648\u0644\u0629 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0646\u0642\u0644",
+      "explanation": "The logistics provider is liable for the goods while they are in transit.",
+      "confidence": 0.94,
+      "bbox": null
+    },
+    {
+      "term": "\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0639\u0645\u064a\u0644 \u0628\u0639\u062f \u0627\u0644\u0648\u0635\u0648\u0644",
+      "category": "Customer Responsibility",
+      "importance": "high",
+      "page": 1,
+      "section": null,
+      "source_text": "\u0627\u0644\u0639\u0645\u064a\u0644 \u064a\u062a\u062d\u0645\u0644 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u062a\u0644\u0641 \u0628\u0639\u062f \u0648\u0635\u0648\u0644 \u0627\u0644\u0628\u0636\u0627\u0639\u0629 \u0625\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639",
+      "explanation": "The customer assumes risk for damage once the goods are delivered to the warehouse.",
+      "confidence": 0.93,
+      "bbox": null
+    }
+  ],
+  "potential_benefits": [
+    {
+      "title": "Monthly fee schedule",
+      "explanation": "The contract specifies that services are billed monthly, providing a regular payment cadence.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u062a\u0636\u0645\u0646 \u0627\u0644\u0639\u0642\u062f \u0631\u0633\u0648\u0645\u064b\u0627 \u0634\u0647\u0631\u064a\u0629"
+    },
+    {
+      "title": "Presence of insurance",
+      "explanation": "The agreement mentions that insurance exists, which could offer some protection against loss.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0634\u064a\u0631 \u0627\u0644\u0639\u0642\u062f \u0625\u0644\u0649 \u0648\u062c\u0648\u062f \u062a\u0623\u0645\u064a\u0646"
+    },
+    {
+      "title": "Comprehensive documentation list",
+      "explanation": "Annexes, shipping orders, warehouse records, photos, damage reports, insurance documents, incident notices, invoices, and correspondence are identified as part of the contract package.",
+      "page": 2,
+      "section": null,
+      "source_text": "\u0627\u0644\u0639\u0642\u062f \u0648\u0627\u0644\u0645\u0644\u0627\u062d\u0642\u060c \u0623\u0648\u0627\u0645\u0631 \u0627\u0644\u0634\u062d\u0646\u060c \u0633\u062c\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639\u060c \u0635\u0648\u0631 \u0648\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u0644\u0641\u060c \u0648\u062b\u0627\u0626\u0642 \u0627\u0644\u062a\u0623\u0645\u064a\u0646\u060c \u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u062f\u062b\u060c \u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631 \u0648\u0627\u0644\u0645\u0631\u0627\u0633\u0644\u0627\u062a"
+    }
+  ],
+  "potential_concerns": [
+    {
+      "title": "Unclear risk transfer timing",
+      "explanation": "The contract states the carrier is liable during transport and the client after arrival at the warehouse, but does not pinpoint the exact moment when risk shifts.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0646\u0635 \u0623\u062d\u062f \u0627\u0644\u0628\u0646\u0648\u062f \u0639\u0644\u0649 \u0623\u0646 \u0634\u0631\u0643\u0629 \u0627\u0644\u0646\u0642\u0644 \u0645\u0633\u0624\u0648\u0644\u0629 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0646\u0642\u0644\u060c \u0628\u064a\u0646\u0645\u0627 \u064a\u0646\u0635 \u0628\u0646\u062f \u0622\u062e\u0631 \u0639\u0644\u0649 \u0623\u0646 \u0627\u0644\u0639\u0645\u064a\u0644 \u064a\u062a\u062d\u0645\u0644 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u062a\u0644\u0641 \u0628\u0639\u062f \u0648\u0635\u0648\u0644 \u0627\u0644\u0628\u0636\u0627\u0639\u0629 \u0625\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u062f\u0639"
+    },
+    {
+      "title": "Vague liability cap scope",
+      "explanation": "A maximum liability limit is set, yet the contract does not clarify whether it includes damage, loss, gross negligence, or confidentiality breaches.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0648\u062c\u062f \u062d\u062f \u0623\u0642\u0635\u0649 \u0644\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629\u060c \u0644\u0643\u0646\u0647 \u0644\u0627 \u064a\u0648\u0636\u062d \u0647\u0644 \u064a\u0634\u0645\u0644 \u062a\u0644\u0641 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0623\u0648 \u0641\u0642\u062f\u0627\u0646\u0647\u0627 \u0623\u0648 \u0627\u0644\u0625\u0647\u0645\u0627\u0644 \u0627\u0644\u062c\u0633\u064a\u0645 \u0623\u0648 \u0627\u0644\u0625\u062e\u0644\u0627\u0644 \u0628\u0627\u0644\u0633\u0631\u064a\u0629"
+    },
+    {
+      "title": "Insufficient insurance detail",
+      "explanation": "The agreement references insurance but omits specifics on coverage amount, covered perils, and deductible.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0634\u064a\u0631 \u0627\u0644\u0639\u0642\u062f \u0625\u0644\u0649 \u0648\u062c\u0648\u062f \u062a\u0623\u0645\u064a\u0646\u060c \u0644\u0643\u0646\u0647 \u0644\u0627 \u064a\u062d\u062f\u062f \u0642\u064a\u0645\u0629 \u0627\u0644\u062a\u063a\u0637\u064a\u0629 \u0623\u0648 \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0634\u0645\u0648\u0644\u0629 \u0623\u0648 \u0645\u0628\u0644\u063a \u0627\u0644\u062a\u062d\u0645\u0644"
+    },
+    {
+      "title": "Ambiguous incident reporting deadline",
+      "explanation": "The contract demands immediate incident reporting without defining a concrete timeframe or reporting channel.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u0637\u0644\u0628 \u0627\u0644\u0639\u0642\u062f \u0627\u0644\u0625\u0628\u0644\u0627\u063a \u0639\u0646 \u0627\u0644\u062d\u0648\u0627\u062f\u062b \u00ab\u0641\u0648\u0631\u0627\u064b\u00bb \u062f\u0648\u0646 \u062a\u062d\u062f\u064a\u062f \u0648\u0633\u064a\u0644\u0629 \u0623\u0648 \u0645\u0647\u0644\u0629 \u062f\u0642\u064a\u0642\u0629"
+    },
+    {
+      "title": "Unspecified fee amounts",
+      "explanation": "While monthly fees are mentioned, the contract excerpt does not provide the actual fee figures or any tiered pricing information.",
+      "page": 1,
+      "section": null,
+      "source_text": "\u064a\u062a\u0636\u0645\u0646 \u0627\u0644\u0639\u0642\u062f \u0631\u0633\u0648\u0645\u064b\u0627 \u0634\u0647\u0631\u064a\u0629"
+    }
+  ],
+  "signatures": [],
+  "checkboxes": [],
+  "consents": [],
+  "actions": [],
+  "missing_fields": [],
+  "questions_to_consider": [
+    "When exactly does the risk of loss or damage transfer from the logistics company to the commercial company?",
+    "What is the amount of insurance coverage, which risks are covered, and what is the deductible?",
+    "What is the maximum liability limit and does it apply to damage, loss, gross negligence, or confidentiality breaches?",
+    "What specific method and time frame are required for reporting incidents to satisfy the \u201cimmediate\u201d reporting clause?",
+    "How will claims be evaluated and what documentation will be required to support a claim?",
+    "Are there any exclusions or exceptions to the liability limits that need to be clarified?",
+    "What records (e.g., delivery logs, damage reports, shipping documents) will be used to determine responsibility in a dispute?"
+  ],
+  "before_you_sign_checklist": [
+    "Verify your personal information (name, address, account/CNIC number)",
+    "Review the fees and charges listed in Financial Terms",
+    "Review your obligations under this agreement",
+    "Review the rights granted to the bank/institution"
+  ],
+  "attention_score": {
+    "level": "MODERATE",
+    "factors": [
+      "Multiple financial obligations",
+      "Multiple 'Important' attention areas"
+    ],
+    "disclaimer": "This score is a document-review indicator, not a legal or financial judgment.",
+    "methodology_note": "Calculated from a fixed checklist of document characteristics (fees, early settlement, default clauses, authorizations, termination restrictions, high-severity attention areas). Each present characteristic adds one point; 0-1 = LOW, 2-3 = MODERATE, 4+ = HIGH."
+  },
+  "citations": [],
+  "processing_notes": [],
+  "voice_summary": "1. Overall Summary: Two\u2011year logistics services agreement for storage and transportation, with monthly fees and several vague clauses. 2. Risk Level: Moderate (as indicated by the attention score). 3. Major Risks: Unclear timing of risk transfer, vague scope of the liability cap, and insufficient detail on insurance coverage. 4. Red Flags: No defined incident\u2011reporting deadline, unspecified fee amounts, and unclear liability limits. 5. Financial Obligations: Monthly fees (amount not disclosed), required insurance (coverage amount, risks, and deductible not specified), and a maximum liability limit (amount not disclosed). 6. Penalties: Failure to report incidents promptly may lead to disputes over compensation; client assumes liability for goods after they reach the warehouse. 7. Important Dates: None provided. 8. Termination Conditions: Not outlined in the available text. 9. Final Warning: Seek clarification on when risk transfers, the exact insurance terms, the liability cap scope, and the incident\u2011reporting procedure before signing."
+}

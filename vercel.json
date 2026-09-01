@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "agreement-analyzer/backend/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/docs",
+      "dest": "agreement-analyzer/backend/main.py"
+    },
+    {
+      "src": "/openapi.json",
+      "dest": "agreement-analyzer/backend/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "agreement-analyzer/backend/main.py"
+    }
+  ]
+}

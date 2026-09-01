@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.env          <--- Yeh line hona zaroori hai
+echo ".env" >> .gitignore".env" 
