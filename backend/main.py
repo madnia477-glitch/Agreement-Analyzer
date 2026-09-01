@@ -1,217 +1,78 @@
-from __future__ import annotations
-"""
-Banking Agreement Intelligence Platform - Agreement Action, Signature &
-Risk Analysis module (backend).
-
-Run with:
-    uvicorn main:app --reload --port 8000
-
-See ../README.md for full setup instructions.
-"""
 import os
+import sys
 import logging
-import shutil
-from pathlib import Path
-from typing import Optional
-
-from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, Response, FileResponse
-from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
 
-import storage
-from pipeline.parser import parse_pdf
-from pipeline.analyzer import run_full_analysis, answer_question, _generate_voice_summary
-from pipeline.export import build_report_pdf
-from pipeline.schema import AgreementAnalysis
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("agreement_analyzer.main")
-
-# ------------- Create FastAPI app -------------
-app = FastAPI(title="Agreement Action, Signature & Risk Analysis")
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # tighten this for production deployments
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-# ------------- Utility models -------------
-class AskRequest(BaseModel):
-    question: str
-
-
-# ------------- Debug route (MOVED HERE) -------------
-@app.get("/ping")
-def ping():
-    return {
-        "status": "ok",
-        "env_keys": [k for k in os.environ.keys() if "GROQ" in k or "API" in k]
-    }
-
-
-@app.get("/")
-def read_root():
-    return {"message": "Agreement Analyzer API is running!"}
-
-
-# ------------- Pipeline background task -------------
-def _run_pipeline(doc_id: str):
+# ----- SAFE WRAPPER: Sab kuch try-except mein -----
+try:
+    # Sab se pehle env variable check karein
+    GROQ_KEY = os.environ.get("GROQ_API_KEY")
+    if not GROQ_KEY:
+        print("WARNING: GROQ_API_KEY is NOT set in environment")
+    else:
+        print(f"GROQ_API_KEY found (first 4 chars: {GROQ_KEY[:4]}...)")
+    
+    # Ab imports karein (agar koi import fail hoga toh catch ho jayega)
     try:
-        storage.set_status(doc_id, "processing", "Document uploaded")
-        doc = parse_pdf(str(storage.original_path(doc_id)))
+        from pipeline.analyzer import run_full_analysis, answer_question
+        from pipeline.export import build_report_pdf
+        from pipeline.schema import AgreementAnalysis
+        from pipeline.parser import parse_pdf
+        import storage
+        print("All imports successful")
+    except Exception as import_err:
+        print(f"Import error: {import_err}")
+        raise
 
-        def on_progress(stage: str):
-            storage.set_status(doc_id, "processing", stage)
+    app = FastAPI(title="Agreement Analyzer (Safe Mode)")
 
-        analysis: AgreementAnalysis = run_full_analysis(doc, on_progress=on_progress)
-
-        storage.save_analysis(doc_id, analysis.model_dump())
-        storage.set_status(doc_id, "done", "Analysis complete.")
-    except Exception as exc:
-        logger.exception("Analysis failed for %s", doc_id)
-        storage.set_status(doc_id, "error", str(exc))
-
-
-# ------------- API Endpoints -------------
-@app.post("/api/upload")
-async def upload(background_tasks: BackgroundTasks, file: UploadFile = File(...)):
-    if not file.filename.lower().endswith(".pdf"):
-        raise HTTPException(400, "Only PDF files are supported in this build.")
-
-    doc_id = storage.new_doc_id()
-    target = storage.original_path(doc_id)
-    with open(target, "wb") as out:
-        shutil.copyfileobj(file.file, out)
-
-    storage.save_filename(doc_id, file.filename)
-    storage.set_status(doc_id, "queued", "Waiting to start analysis...")
-    background_tasks.add_task(_run_pipeline, doc_id)
-
-    return {"doc_id": doc_id, "filename": file.filename}
-
-
-@app.get("/api/status/{doc_id}")
-async def status(doc_id: str):
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-    return storage.get_status(doc_id)
-
-
-@app.get("/api/analysis/{doc_id}")
-async def get_analysis(doc_id: str):
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-    data = storage.load_analysis(doc_id)
-    if data is None:
-        raise HTTPException(202, "Analysis not ready yet.")
-    return JSONResponse(data)
-
-
-@app.get("/api/document/{doc_id}")
-async def get_document(doc_id: str):
-    path = storage.original_path(doc_id)
-    if not path.exists():
-        raise HTTPException(404, "Document not found.")
-    return FileResponse(str(path), media_type="application/pdf", filename=storage.load_filename(doc_id))
-
-
-@app.post("/api/ask/{doc_id}")
-async def ask(doc_id: str, req: AskRequest):
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-    doc = parse_pdf(str(storage.original_path(doc_id)), allow_ocr=False)
-    try:
-        result = answer_question(doc, req.question)
-    except RuntimeError as exc:
-        raise HTTPException(500, str(exc))
-    return result
-
-
-# ---------- VOICE SUMMARY ENDPOINTS (with caching and language support) ----------
-def _get_cached_voice(doc_id: str, lang: str) -> Optional[str]:
-    """Read cached voice summary from disk to avoid regenerating every time."""
-    path = storage.doc_dir(doc_id) / f"voice_{lang}.txt"
-    if path.exists():
-        return path.read_text(encoding="utf-8")
-    return None
-
-
-def _cache_voice(doc_id: str, lang: str, text: str):
-    path = storage.doc_dir(doc_id) / f"voice_{lang}.txt"
-    path.write_text(text, encoding="utf-8")
-
-
-@app.get("/api/voice-summary/{doc_id}")
-async def get_voice_summary(doc_id: str, lang: str = "en"):
-    """Get the pre-signing voice summary in English (en) or Urdu (ur)."""
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-
-    # Check cache first
-    cached = _get_cached_voice(doc_id, lang)
-    if cached:
-        return {"voice_summary": cached}
-
-    # Load analysis
-    data = storage.load_analysis(doc_id)
-    if data is None:
-        raise HTTPException(202, "Analysis not ready yet.")
-
-    analysis = AgreementAnalysis(**data)
-    try:
-        summary = _generate_voice_summary(analysis, language=lang)
-        if not summary:
-            raise HTTPException(500, "Could not generate voice summary.")
-        _cache_voice(doc_id, lang, summary)
-        return {"voice_summary": summary}
-    except Exception as exc:
-        raise HTTPException(500, f"Voice generation failed: {exc}")
-
-
-@app.post("/api/voice-summary/{doc_id}")
-async def regenerate_voice_summary(doc_id: str, lang: str = "en"):
-    """Force regenerate the voice summary for a specific language."""
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-
-    data = storage.load_analysis(doc_id)
-    if data is None:
-        raise HTTPException(202, "Analysis not ready yet.")
-
-    analysis = AgreementAnalysis(**data)
-    try:
-        summary = _generate_voice_summary(analysis, language=lang)
-        if not summary:
-            raise HTTPException(500, "Could not generate voice summary.")
-        _cache_voice(doc_id, lang, summary)
-        return {"voice_summary": summary}
-    except Exception as exc:
-        raise HTTPException(500, f"Voice generation failed: {exc}")
-
-
-# ---------- EXPORT PDF ----------
-@app.get("/api/export/{doc_id}")
-async def export(doc_id: str):
-    if not storage.exists(doc_id):
-        raise HTTPException(404, "Document not found.")
-    data = storage.load_analysis(doc_id)
-    if data is None:
-        raise HTTPException(202, "Analysis not ready yet.")
-    analysis = AgreementAnalysis(**data)
-    pdf_bytes = build_report_pdf(analysis, storage.load_filename(doc_id))
-    return Response(
-        content=pdf_bytes,
-        media_type="application/pdf",
-        headers={"Content-Disposition": f'attachment; filename="agreement-review-{doc_id}.pdf"'},
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
 
+    @app.get("/")
+    async def root():
+        return {
+            "status": "ok",
+            "message": "Agreement Analyzer is running!",
+            "groq_key_set": bool(os.environ.get("GROQ_API_KEY")),
+            "python_version": sys.version
+        }
 
-# Serve the frontend as static files so the whole app can run from one process.
-frontend_dir = Path(__file__).parent.parent / "frontend"
-if frontend_dir.exists():
-    app.mount("/", StaticFiles(directory=str(frontend_dir), html=True), name="frontend")
+    @app.get("/ping")
+    async def ping():
+        return {
+            "status": "ok",
+            "groq_key_exists": bool(os.environ.get("GROQ_API_KEY")),
+            "env_vars": [k for k in os.environ.keys() if "GROQ" in k or "API" in k]
+        }
+
+    # ------ Baaki saare original endpoints yahan daalein (optional) ------
+    # NOTE: Agar original endpoints bhi chaahiye toh unhe yahan paste karein
+    # (lekin pehle confirm kar lein ki storage, pipeline import ho rahe hain)
+
+except Exception as startup_err:
+    # Agar startup mein hi error aaya, toh ek dummy app banayein jo error dikhaye
+    print(f"CRITICAL STARTUP ERROR: {startup_err}")
+    import traceback
+    traceback.print_exc()
+    
+    app = FastAPI(title="Error Mode")
+    app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+    
+    @app.get("/")
+    @app.get("/ping")
+    async def error_root():
+        return JSONResponse(
+            status_code=500,
+            content={
+                "error": "App failed to start",
+                "details": str(startup_err),
+                "traceback": traceback.format_exc()
+            }
+        )
