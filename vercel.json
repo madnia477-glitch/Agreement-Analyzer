@@ -1,22 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "agreement-analyzer/backend/main.py",
-      "use": "@vercel/python"
+  "functions": {
+    "backend/main.py": {
+      "runtime": "python3.9"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/docs",
-      "dest": "agreement-analyzer/backend/main.py"
-    },
-    {
-      "src": "/openapi.json",
-      "dest": "agreement-analyzer/backend/main.py"
-    },
-    {
       "src": "/(.*)",
-      "dest": "agreement-analyzer/backend/main.py"
+      "dest": "backend/main.py"
     }
   ]
 }
