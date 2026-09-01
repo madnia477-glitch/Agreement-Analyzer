@@ -1,2 +1,22 @@
+[project]
+name = "agreement-analyzer"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "pdfplumber",
+    "PyPDF2",
+    "pytesseract",
+    "pdf2image",
+    "Pillow",
+    "scikit-learn",
+    "numpy",
+    "groq",
+    "pydantic",
+    "reportlab",
+    "python-dotenv"
+]
+
 [tool.vercel]
 entrypoint = "backend.main:app"
